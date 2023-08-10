@@ -1,0 +1,17 @@
+{
+  "name": "projeto-poo-softex",
+  "version": "1.0.0",
+  "description": "Este repositório é para a criação de um projeto proposto em sala de aula na SoftEx-PE com o intuito de desenvolver um sistema de gerenciamento de biblioteca que permita aos usuários (alunos e professores) realizar operações de empréstimo, devolução, e busca de livros.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "ts-node-dev --respawn --transpile-only src/index.ts"
+  },
+  "author": "Yan Palmer <86450167+YanPalmer@users.noreply.github.com>",
+  "license": "ISC",
+  "repository": "https://github.com/YanPalmer/Projeto-POO-SoftEx.git",
+  "devDependencies": {
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.1.6"
+  }
+}
