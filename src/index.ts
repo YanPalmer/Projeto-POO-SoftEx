@@ -28,18 +28,15 @@ class Entrada {     // Recebe 3 entradas
 
 //  Entradas
 iniciar();
-let num1;
-let num2;
-let operador;
-let resultado;
 function iniciar() {
-    num1 = prompt("Digite um número: ");
-    operador = prompt("Escolha um dos seguintes operadores:\n +\n -\n /\n *\n");
-    num2 = prompt("Digite o segundo número: ");
-    resultado = new Entrada(parseFloat(num1), parseFloat(num2));
-    console.log(resultado);
+    const num1 = parseFloat(prompt("Digite um número: "));
+    const operador = prompt("Escolha um dos seguintes operadores:\n +\n -\n /\n *\n");
+    const num2 = parseFloat(prompt("Digite o segundo número: "));
+    const resultado = new Entrada(num1, num2);
     verificarOperador(operador, resultado);
 }
+
+
 
 function verificarOperador(operador: string, resultado: Entrada) {
     switch (operador) {
@@ -57,6 +54,7 @@ function verificarOperador(operador: string, resultado: Entrada) {
             break;
         default:
             console.log("Algo errado, tente novamente...");
+            iniciar();
             break;
     }
 }
