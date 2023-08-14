@@ -1,9 +1,9 @@
 const Biblioteca = class Biblioteca {
-    private listaDeLivros: string;
-    private listaDeUsuarios: string;
-    private listaDeEmprestimos: string;
+    private listaDeLivros: [] = [];
+    private listaDeUsuarios: [] = [];
+    private listaDeEmprestimos: [] = [];
 
-    constructor(listaDeLivros: string, listaDeUsuarios: string, listaDeEmprestimos: string) {
+    constructor(listaDeLivros: [], listaDeUsuarios: [], listaDeEmprestimos: []) {
         this.listaDeLivros = listaDeLivros;
         this.listaDeUsuarios = listaDeUsuarios;
         this.listaDeEmprestimos = listaDeEmprestimos;
