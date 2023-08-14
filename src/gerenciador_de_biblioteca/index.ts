@@ -1,4 +1,7 @@
+// Importação de classes
 import { Livro } from "./classes/Livro";
-
-const livro1 = new Livro("A01");
-livro1.mostrar();
+import { Usuario } from "./classes/Usuario";
+import { Aluno } from "./classes/Aluno";
+import { Professor } from "./classes/Professor";
+import { Emprestimo } from "./classes/Emprestimo";
+import { Biblioteca } from "./classes/Biblioteca";

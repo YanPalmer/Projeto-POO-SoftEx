@@ -1,13 +1,28 @@
 const Livro = class Livro {
-    id: string;
+    private id: string;
+    private titulo: string;
+    private autor: string;
+    private anoDePublicacao: number;
+    private genero: string;
+    private quantidadeDeExemplaresDisp: number;
 
-    constructor(id: string) {
+    constructor(id: string,
+        titulo: string,
+        autor: string,
+        anoDePublicacao: number,
+        genero: string,
+        quantidadeDeExemplaresDisp: number) {
         this.id = id;
+        this.titulo = titulo;
+        this.autor = autor;
+        this.anoDePublicacao = anoDePublicacao;
+        this.genero = genero;
+        this.quantidadeDeExemplaresDisp = quantidadeDeExemplaresDisp;
     }
 
-    mostrar() {
-        console.log("Aqui está: ", this.id);
-    }
+    get() {}
+
+    set() {}
 }
 
 export {
